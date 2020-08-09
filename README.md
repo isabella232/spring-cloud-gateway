@@ -329,7 +329,7 @@ curl -v https://gateway-gateway.azuremicroservices.io/api/books | jq -C
 ]
 ```
 
-Repeatedly sending requests more than the request rate limit results in `HTTP 429 429 Too Many Requests` error responses to the client.
+Repeatedly sending requests more than the request rate limit results in `HTTP 429 Too Many Requests` error responses to the client.
 
 ```http request
 curl -v https://gateway-gateway.azuremicroservices.io/api/books | jq -C
@@ -374,10 +374,11 @@ curl -v https://gateway-gateway.azuremicroservices.io/api/books | jq -C
 
 In this quickstart, you've deployed an existing Spring microservices app using Azure CLI, Terraform and GitHub Actions. To learn more about Azure Spring Cloud, go to:
 
+- [Spring Cloud Gateway](https://cloud.spring.io/spring-cloud-gateway/reference/html/)
 - [Azure Spring Cloud](https://azure.microsoft.com/en-us/services/spring-cloud/)
 - [Azure Spring Cloud docs](https://docs.microsoft.com/en-us/azure/java/)
 - [Deploy Spring microservices from scratch](https://github.com/microsoft/azure-spring-cloud-training)
-- [Deploy existing Spring microservices](https://github.com/Azure-Samples/azure-spring-cloud)
+- [Deploy existing Spring microservices](https://github.com/Azure-Samples/spring-petclinic-microservices)
 - [Azure for Java Cloud Developers](https://docs.microsoft.com/en-us/azure/java/)
 - [Spring Cloud Azure](https://cloud.spring.io/spring-cloud-azure/)
 - [Spring Cloud](https://spring.io/projects/spring-cloud)
