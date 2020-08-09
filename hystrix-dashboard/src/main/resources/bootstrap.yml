@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: hystrix-dashboard
+  jmx:
+      enabled: true
+
+turbine:
+  appConfig: book-store,movie-store,gateway
+  aggregator:
+      clusterConfig: book-store,movie-store,gateway
+  clusterNameExpression: new String("store")
+
+# Metrics
+management:
+  endpoint:
+    metrics:
+      enabled: true
+    web:
+      exposure:
+        include: '*'
+  security:
+    enabled: false

@@ -21,6 +21,8 @@ public class BookService {
         books.add(new Book("Liar Liar", "9780316418249",  Arrays.asList(new Author("James Patterson"), new Author("Candice Fox"))));
         books.add(new Book("The Chef", "9780316453301", Arrays.asList(new Author("Max DiLallo "), new Author("James Patterson"))));
         books.add(new Book("Stranger Things - Suspicious Minds", "9781984800886", Arrays.asList(new Author("Gwenda Bond"))));
+
+        books.add(new Book("Optimizing Java", "9781492025795", Arrays.asList(new Author("Benjamin J Evans"), new Author("James Gough"), new Author("Chris Newland"))));
     }
 
     public List<Book> getBooks(){
