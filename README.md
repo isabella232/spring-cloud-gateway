@@ -22,6 +22,7 @@ You will:
 - Deploy applications to Azure
 - Bind Spring Cloud Gateway to Azure Redis Cache
 - Open the application, test two microservices running behind a Spring Cloud Gateway
+- Test Request Rate Limiter features in Spring Cloud Gateway
 
 ## What you will need
 
@@ -206,6 +207,8 @@ Deploy microservice applications to Azure.
 ```bash
     az spring-cloud app show --name ${GATEWAY} | grep url
 ```
+
+## Spring Cloud Gateway and Rate Limiting
 
 Navigate to the URL provided by the previous command to open the Spring Cloud Gateway application.
 
