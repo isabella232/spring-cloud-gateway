@@ -204,9 +204,15 @@ Deploy microservice applications to Azure.
         --jar-path ${HYSTRIX_DASHBOARD_JAR}
 ```
 
+Get the single entry point into Spring Cloud Gateway in Azure Spring Cloud.
+
 ```bash
     az spring-cloud app show --name ${GATEWAY} | grep url
 ```
+
+Open the Azure Portal and navigate to the `Apps` blade in the newly created Azure Spring Cloud.
+
+![](./media/apps-in-azure-spring-cloud.jpg)
 
 ## Spring Cloud Gateway and Rate Limiting
 
